@@ -83,13 +83,21 @@
         /* Desktop: Section header on the left */
         @media (min-width: 1024px) {
             .section-header {
-                position: absolute;
-                left: -1000px;
-                top: 0;
-                width: 180px;
-                text-align: right;
                 position: sticky;
                 top: 1rem;
+                margin-left: -120px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .section-header {
+                margin-left: -200px;
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .section-header {
+                margin-left: -240px;
             }
         }
 
